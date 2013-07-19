@@ -9,7 +9,7 @@ var mssg = function(){
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(mssg);
+  response.send(mssg());
 });
 
 var port = process.env.PORT || 5000;
